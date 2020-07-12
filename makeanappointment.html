@@ -29,62 +29,58 @@
 
 <body>
     <!--::header part start::-->
-        <header class="main_menu home_menu other_menu">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/dermatika.png" alt="logo" height="75"> </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
-                            id="navbarSupportedContent">
-                            
-                        </div>
-						<div class="main-menu-item">
-							<ul class="navbar-nav align-items-center">
-								<li class="nav-item">
-                                    <b><a class="nav-link" href="index.html">Home</a></b>
-                                </li>
-                                <li class="nav-item">
-                                    <b><a class="nav-link" href="about.html">About Us</a></b>
-                                </li>
-                                <li class="nav-item">
-                                    <b><a class="nav-link" href="contact.html">Contact Us</a></b>
-                                </li>
-								<li class="nav-item">
-									<button class="btn_2 d-none d-lg-block" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-								</li>
-							</ul>                     
-						</div>
-                        <div id="id01" class="modal">
-                            <form class="modal-content animate" action=" " method="post">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                </div>
-                                <div class="container">
-                                    <label for="uname"><b>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="uname" required>
-                
-                                    <label for="psw"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
-                            
-                                    <button type="submit" onclick="doctordashboard.html">Login</button>
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                                    </label>
-                                </div>
-                                <div class="container" style="background-color:#f1f1f1">
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>  
-                                    <span class="psw"><a href="#">Sign Up</a></span>
-                                </div>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
+    <header class="main_menu home_menu other_menu">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html"> <img src="img/skinzy-blue.png" alt="logo" height="75"> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse main-menu-item" Style="margin-left: 770px; margin-right: 0px" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <b><a class="nav-link" href="index.html">Home</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link" href="about.html">About Us</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link" href="contact.html">Contact Us</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <div class="g-signin2" style="width:125px; height:50px" data-onsuccess="onSignIn"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<div id="id01" class="modal">
+                        <form class="modal-content animate" action=" " method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                                <button type="submit" onclick="doctordashboard.html">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+                            <div class="container" style="background-color:#f1f1f1">
+                                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>  
+                            </div>
+                        </form>
+                    </div>-->
+                </nav>
             </div>
+        </div>
     </header>
 <!-- Header part end-->
 	
@@ -148,29 +144,31 @@
     </section>
     <!--::regervation_part end::-->
 
+   
+
     <!-- footer part start-->
     <footer class="footer-area">
         <div class="single-footer-widget">
             <div class="container">
-			    <center>
-				<br><a href="#" class="footer_logo"><img src="img/dermatika.png" style="height:200px; width:250px" alt="#"></a><br><br>
+			<center>
+				<a href="#" class="footer_logo"> <img src="img/skinzy-blue.png" style="height:250px; width:250px"alt="#"></a><br><br><br>
 				<p>
 					Copyright&copy;
 					<script>    document.write(new Date().getFullYear());   </script>
 					All rights reserved | Thank you for visiting our website
 				</p>
 				<div class="row col-md-4" style="margin-left:4px">
-					<a href="#" target="_blank"> <img src="img/googleplay.png" alt="Play Store" style="height:71px; width:170px; margin-top:-12px; margin-bottom:-50px"></a>
-					<a href="#" target="_blank"> <img src="img/appstore.png" alt="App Store" style="height:47px; width:170px; margin-top:-12px; margin-bottom:-50px"></a>
+						<a href="#" target="_blank"> <img src="img/googleplay.png" alt="Play Store" style="height:71px; width:170px; padding-bottom:2px"></a>
+						<a href="#" target="_blank"> <img src="img/appstore.png" alt="App Store" style="height:47px; width:170px; margin-top:10px"></a>
 				</div>
 				<br> <br>
-				<div class="col-md-3 social_logo">
-                    <a href="#"> <img src="img/icon/facebook.png" style="width:25px"> </a>
-					<a href="#"> <img src="img/icon/instagram.png" style="width:25px"> </a>
-					<a href="#"> <img src="img/icon/twitter.png" style="width:25px"> </a>
-					<a href="#"> <img src="img/icon/linkedin.png" style="width:25px"> </a>
+				<div class=" col-md-3 social_logo">
+					<a href="#"> <img src="img/icon/facebook.png" style="heigth:25px; width:25px"> </a>
+					<a href="#"> <img src="img/icon/instagram.png" style="heigth:25px; width:25px"> </a>
+					<a href="#"> <img src="img/icon/twitter.png" style="heigth:25px; width:25px"> </a>
+					<a href="#"> <img src="img/icon/skype.png" style="heigth:25px; width:25px"> </a>
 				</div>
-			    </center>
+			</center>
 			</div>
         </div>
     </footer>
