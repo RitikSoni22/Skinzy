@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-signin-client_id" content="261750679779-ceih9pph1d71lri7oakhtq9fba6evsh7.apps.googleusercontent.com">
+    <title>DermaTika®</title>
+    <link rel="icon" href="img/dermatika_title.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--font awesome cdn (for statistics)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<style>/*for side-nav*/
+	body {
+		color: #242429;
+		font-size: 14px;
+		font-family: "Playfair Display", serif;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 10px 35px;
+		text-align: center;
+		font-size: 12px;
+		color: #000000;
+		-o-transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+		text-transform: uppercase;
+		border-radius: 2px;
+		font-family: "Roboto", sans-serif;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+
+	.btn:hover {
+		background-color: #43cea2;
+	}
+
+    #box1 {
+		width: 220px;
+		height: 150px;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 25px;
+		border: 2px solid #000000;
+		justify-content: center;
+    }
+    
+    .sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		left: 0;
+		background-color: #DDEFBB;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		opacity: 90%;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 22px;
+		text-decoration: none;
+		font-size: 17px;
+		color: #000000;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #ffffff;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	#main {
+		transition: margin-left .5s;
+		padding: 16px;
+	}
+
+	@media screen and (max-height: 450px) {
+		.sidenav {
+			padding-top: 15px;
+		}
+
+		.sidenav a {
+			font-size: 14px;
+		}
+    }
+    
+    .bg {
+		background-image: linear-gradient(to right, #43cea2, #185a9d);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: inherit;
+	}
+
+</style>
+
+<body>
+<div id="main" style="padding:0">
+    <!--Sidebar Nav Start-->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="appointments.html">Appointments</a>
+		<a href="prescription.html">Prescription</a>
+	</div>
+	<!--Sidebar Nav Start-->
+    
+    <!--::header part start::-->
+    <header class="main_menu home_menu other_menu">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-sm-0">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <span style="font-size:30px;cursor:pointer;color:white;z-index:999" onclick="openNav()">&#9776;</span>
+                    <a class="navbar-brand" href="index.html"> <img src="img/dermatika.png" alt="logo" height="75"> </a>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse main-menu-item justify-content-center" id="navbarSupportedContent"></div>
+                    <div class="main-menu-item">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <b><a class="nav-link" href="index.html">Home</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link" href="about.html">About Us</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <b><a class="nav-link" href="contact.html">Contact Us</a></b>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn_2 d-none d-lg-block" href="makeanappointment.html">Make An Appointment</a>
+                            </li>
+                            <font color=blue>. .</font>
+                            <li class="nav-item">
+                                <div class="g-signin2" style="width:125px; height:50px" data-onsuccess="onSignIn"></div>
+                            </li>
+                        </ul>                     
+                    </div>
+                    <!-- <div id="id01" class="modal">
+                        <form class="modal-content animate" action=" " method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                                <button type="submit" onclick="doctordashboard.html">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+                            <div class="container" style="background-color:#f1f1f1">
+                                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>  
+                            </div>
+                        </form>
+                    </div> -->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container counter-section">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12" style="text-align: left">
+                            <div class="banner_text">
+                                <div class="banner_text_iner"><br><br>
+                                    <!--h4><b><font color="#e30000">What do we do?</font></b></h4-->
+                                    <h6><b><font color="#000" align="justify">DermaTika® provides
+                                        affordable, simple and effective solution to your skin-related diagnostic
+                                        questions (Mostly cosmetic).</font></b></h6>
+                                    <br>
+                                    <!--h4><b><font color="#e30000">How do we do?</font></b></h4-->
+                                    <h6><b><font color="#000">We use AI with Medical Imaging Techniques for the
+                                        detection of cosmetic skin diseases.</font></b></h6>
+                                    <br>
+                                    <!--h4><b><font color="#e30000">Why do we do?</font></b></h4-->
+                                    <h6><b><font color="#000">We do fot the betterment of the society & do not
+                                        intend to substitute any dermatologist. Its purpose is to serve as a tool for
+                                        preliminary diagnosis where the expertise of dermatologists is rarely
+                                        available.</font></b></h6>     
+                                </div>
+                            </div>
+                            <br>
+                            <a href="#" target="_blank"> <img src="img/googleplay.png" alt="Play Store" style="height:65px; width:150px; margin-left:-10px"></a>
+							<a href="#" target="_blank"> <img src="img/appstore.png" alt="App Store" style="height:45px; width:140px"></a>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="banner_text">
+                                <div class="banner_text_iner">
+                                    <br>
+									<video width="700" height="370px" style="margin-right:-70px; border-radius:20px" frameborder="0" controls>
+									  <source src="img/Dermatika.mp4" type="video/mp4">
+									</video>
+                                    <!--iframe width="700px" height="370px" src="https://www.youtube.com/embed/a1PQNhjuDKc" style="margin-right:-70px; border-radius:20px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+                                </div>
+                            </div>
+                        </div>
+						<div class="row col-md-12 col-sm-12" style="margin-top:10px; margin-left:25px">
+							<div class="col-md-6 col-sm-6 text-center" id="one">
+							<p style="padding-left: 30px"> Doctor Reviews </p>
+								<div class="slideshow-container" style="margin-left:60px">
+									  <div class="mySlides">
+										<center><p > I love you the more in that I believe you had liked me for my own sake and for nothing else </p>
+									  </div>
+
+									  <div class="mySlides ">
+										<center><p> Hello! </p>
+									  </div>
+
+									  <div class="mySlides ">
+										<center><p> Hello! </p>
+									  </div>
+									  
+										<div class="mySlides">
+										<center><p> Hello! </p>
+									  </div>
+
+									  <a class="prev" style="margin-left:-200px">&#10094;</a>
+									  <a class="next" style="margin-left:-20px">&#10095;</a>
+
+									<div style="text-align:center">
+									  <span class="dot"></span>
+									  <span class="dot" ></span>
+									  <span class="dot" ></span>
+									   <span class="dot"></span>
+									</div>
+								</div>
+							</div>
+							<div class=" col-md-6 col-sm-6 text-center">
+							<p> Patient Reviews </p>
+								<div class="slideshow-container " style="margin-left:30px">
+									  <div class="mySlides">
+										<center><p> I love you the more in that I believe you had liked me for my own sake and for nothing else</p>
+									  </div>
+									  <div class="mySlides">
+										<center><p> Hello! </p>
+									  </div>
+									  <div class="mySlides">
+										<center><p> Hello! </p>
+									  </div>
+									  <a class="prev" style="margin-left:-200px" >&#10094;</a>
+									  <a class="next" style="margin-left:-20px" >&#10095;</a>
+									<div style="text-align:center">
+									  <span class="dot"></span>
+									  <span class="dot"></span>
+									  <span class="dot"></span>
+									</div>  
+								</div>
+							</div>
+						</div>
+						<script>
+							(function()
+							{
+								  init(); //on page load - show first slide, hidethe rest
+
+								  function init() {
+
+									parents = document.getElementsByClassName('slideshow-container');
+
+									for (j = 0; j < parents.length; j++) {
+									  var slides = parents[j].getElementsByClassName("mySlides");
+									  var dots = parents[j].getElementsByClassName("dot");
+									  slides[0].classList.add('active-slide');
+									  dots[0].classList.add('active');
+									}
+								  }
+
+								  dots = document.getElementsByClassName('dot'); //dots functionality
+
+								  for (i = 0; i < dots.length; i++) {
+
+									dots[i].onclick = function() {
+
+									  slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
+
+									  for (j = 0; j < this.parentNode.children.length; j++) {
+										this.parentNode.children[j].classList.remove('active');
+										slides[j].classList.remove('active-slide');
+										if (this.parentNode.children[j] == this) {
+										  index = j;
+										}
+									  }
+									  this.classList.add('active');
+									  slides[index].classList.add('active-slide');
+
+									}
+								  }
+								//prev/next functionality
+								  links = document.querySelectorAll('.slideshow-container a');
+
+								  for (i = 0; i < links.length; i++) {
+									links[i].onclick = function() {
+									  current = this.parentNode;
+
+									  var slides = current.getElementsByClassName("mySlides");
+									  var dots = current.getElementsByClassName("dot");
+									  curr_slide = current.getElementsByClassName('active-slide')[0];
+									  curr_dot = current.getElementsByClassName('active')[0];
+									  curr_slide.classList.remove('active-slide');
+									  curr_dot.classList.remove('active');
+									  if (this.className == 'next') {
+
+										if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
+										  curr_slide.nextElementSibling.classList.add('active-slide');
+										  curr_dot.nextElementSibling.classList.add('active');
+										} else {
+										  slides[0].classList.add('active-slide');
+										  dots[0].classList.add('active');
+										}
+
+									  }
+
+									  if (this.className == 'prev') {
+
+										if (curr_slide.previousElementSibling) {
+										  curr_slide.previousElementSibling.classList.add('active-slide');
+										  curr_dot.previousElementSibling.classList.add('active');
+										} else {
+										  slides[slides.length - 1].classList.add('active-slide');
+										  dots[slides.length - 1].classList.add('active');
+										}
+
+									  }
+
+									}
+
+								  }
+							})();
+						</script>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 align-right">
+                    <br><br><br><br>
+                    <div class="col-md-12 col-sm-6 counter-box">
+                        <div class="row">
+                            <div class="icon-box">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div>
+                                <p class="counter">1150</p>                                
+                            </div>
+							<br><br>
+							<p>Website Visitors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 counter-box">
+                        <div class="row">  
+                            <div class="icon-box">
+                                <i class="fa fa-download"></i>
+                            </div>
+                            <div>
+                                <p class="counter">500</p>
+                            </div>
+							<br><br>
+							<p>App Downloads</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-12 col-sm-6 counter-box">
+                        <div class="row">    
+                            <div class="icon-box">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div>
+                                <p class="counter">150</p>                                
+                            </div>
+							<br><br>
+							<p>Cities Covered</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 counter-box">
+                        <div class="row">
+                            <div class="icon-box">
+                                <i class="fa fa-user-md"></i>
+                            </div>
+                            <div>
+                                <p class="counter">100</p>                                
+                            </div>
+							<br><br>
+							<p>Doctors Onboard</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 counter-box">
+                        <div class="row">
+                            <div class="icon-box">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div>
+                                <p class="counter" style="margin-left:10px">200</p>                               
+                            </div>	
+                        </div>
+						<p style="padding-top:5px">Our Patients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script>
+            jQuery(document).ready(function( $ )
+            {
+                $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+                });
+            });
+        </script>
+    </section>
+    <!-- banner part end-->
+
+    <!--::doctor_part start::-->
+    <section class="doctor_part">
+        <div class="container" style="padding-bottom:100px">
+    <section class="doctor_part s">
+        <div class="container pt-5" style="margin-bottom:150px">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section_tittle text-center">
+                        <h2> Experienced Doctors</h2>
+                        <p>We have some of the best doctors with extensive experience in skincare.</p>
+                    </div>
+                </div>
+            </div>
+		
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="single_blog_item flip-box">
+						<div class="single_blog_img flip-box-inner">
+							<div class="flip-box-front">
+							  <img src="img/doctor/doctor_1.png" alt="doctor">
+							</div>
+							<div class="flip-box-back">
+							  <h3>DR. Adam Billiard</h3>
+							  <p>Senior Consultant Dermatologist and Consultant Dermatopathologist;
+							  Specialist in Diagnosis and Treatment of Chronic Skin Diseases; 
+							  Established first countrywide dermatopathology referral system; 
+							  Editor of the Indian Journal of Dermatology,
+							  Venereology and Leprology (2003-2008)</p>
+							</div>
+						</div>
+						<div class="single_text">
+							<div class="single_blog_text">
+								<h3>DR Adam Billiard</h3>
+								<p>Heart specialist</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="single_blog_item flip-box">
+						<div class="single_blog_img flip-box-inner">
+							<div class="flip-box-front">
+							  <img src="img/doctor/doctor_2.png" alt="doctor">
+							</div>
+							<div class="flip-box-back">
+							  <h3>DR. Adam Billiard</h3>
+							  <p>Senior Consultant Dermatologist and Consultant Dermatopathologist;
+							  Specialist in Diagnosis and Treatment of Chronic Skin Diseases; 
+							  Established first countrywide dermatopathology referral system; 
+							  Editor of the Indian Journal of Dermatology,
+							  Venereology and Leprology (2003-2008)</p>
+							</div>
+						</div>
+						<div class="single_text">
+							<div class="single_blog_text">
+								<h3>DR Adam Billiard</h3>
+								<p>Heart specialist</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="single_blog_item flip-box">
+						<div class="single_blog_img flip-box-inner">
+							<div class="flip-box-front">
+							  <img src="img/doctor/doctor_3.png" alt="doctor">
+							</div>
+							<div class="flip-box-back">
+							  <h3>DR. Adam Billiard</h3>
+							  <p>Senior Consultant Dermatologist and Consultant Dermatopathologist;
+							  Specialist in Diagnosis and Treatment of Chronic Skin Diseases; 
+							  Established first countrywide dermatopathology referral system; 
+							  Editor of the Indian Journal of Dermatology,
+							  Venereology and Leprology (2003-2008)</p>
+							</div>
+						</div>
+						<div class="single_text">
+							<div class="single_blog_text">
+								<h3>DR Adam Billiard</h3>
+								<p>Heart specialist</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="single_blog_item flip-box">
+						<div class="single_blog_img flip-box-inner">
+							<div class="flip-box-front">
+							  <img src="img/doctor/doctor_4.png" alt="doctor">
+							</div>
+							<div class="flip-box-back">
+							  <h3>DR. Adam Billiard</h3>
+							  <p>Senior Consultant Dermatologist and Consultant Dermatopathologist;
+							  Specialist in Diagnosis and Treatment of Chronic Skin Diseases; 
+							  Established first countrywide dermatopathology referral system; 
+							  Editor of the Indian Journal of Dermatology,
+							  Venereology and Leprology (2003-2008)</p>
+							</div>
+						</div>
+						<div class="single_text">
+							<div class="single_blog_text">
+								<h3>DR Adam Billiard</h3>
+								<p>Heart specialist</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+            </div>
+        </div>
+    </section>
+    <!--::doctor_part end::-->
+
+    <!-- our depertment part start-->
+    <section class="our_depertment section_padding">
+        <div class="container PT-3">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-12">
+                    <div class="depertment_content">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10">
+                                <h2>Diseases</h2>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="img/icon/better_health.png" alt=""></span>
+                                            <h4>Disease 1</h4>
+                                            <img src="img/post/post_3.png">
+                                            <p>Darkness multiply rule Which from without life creature blessed
+                                                give moveth moveth seas make day which divided our have.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="img/icon/better_health.png" alt=""></span>
+                                            <h4>Disease 2</h4>
+                                            <img src="img/post/post_3.png">
+                                            <p>Darkness multiply rule Which from without life creature blessed
+                                                give moveth moveth seas make day which divided our have.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="img/icon/better_health.png" alt=""></span>
+                                            <h4>Disease 3</h4>
+                                            <img src="img/post/post_3.png">
+                                            <p>Darkness multiply rule Which from without life creature blessed
+                                                give moveth moveth seas make day which divided our have.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="img/icon/better_health.png" alt=""></span>
+                                            <h4>Disease 4</h4>
+                                            <img src="img/post/post_3.png">
+                                            <p>Darkness multiply rule Which from without life creature blessed
+                                                give moveth moveth seas make day which divided our have.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our depertment part end-->
+</div>
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="single-footer-widget">
+            <div class="container">
+			    <center>
+				<br><a href="#" class="footer_logo"><img src="img/dermatika.png" style="height:200px; width:250px" alt="#"></a><br><br>
+				<p>
+					Copyright&copy;
+					<script>    document.write(new Date().getFullYear());   </script>
+					All rights reserved | Thank you for visiting our website
+				</p>
+				<div class="row col-md-4" style="margin-left:4px">
+					<a href="#" target="_blank"> <img src="img/googleplay.png" alt="Play Store" style="height:71px; width:170px; margin-top:-12px; margin-bottom:-50px"></a>
+					<a href="#" target="_blank"> <img src="img/appstore.png" alt="App Store" style="height:47px; width:170px; margin-top:-12px; margin-bottom:-50px"></a>
+				</div>
+				<br> <br>
+				<div class="col-md-3 social_logo">
+                    <a href="#"> <img src="img/icon/facebook.png" style="width:25px"> </a>
+					<a href="#"> <img src="img/icon/instagram.png" style="width:25px"> </a>
+					<a href="#"> <img src="img/icon/twitter.png" style="width:25px"> </a>
+					<a href="#"> <img src="img/icon/linkedin.png" style="width:25px"> </a>
+				</div>
+			    </center>
+			</div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+     <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!--Googel SignIn js-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function onSignIn(googleUser) {
+		console.log('User is ' + JSON.stringify(googleUser.getBasicProfile()))
+         	document.querySelector('#content').innerText = googleUSer.getBasicProfile().getName();
+		var profile = googleUser.getBasicProfile();
+		var id = profile.getId();
+		var fname = profile.getName();
+		var gname = profile.getGivenName();
+		var image = profile.getImageUrl();
+		var email = profile.getEmail();
+
+		// The ID token you need to pass to your backend:
+		var id_token = googleUser.getAuthResponse().id_token;
+        }
+    const targetUrl = 'https://dishank.pythonanywhere.com/validate/';
+
+    document.getElementsByClassName("g-signin2").addEventListener("click",function (){
+
+	fetch(targetUrl, {
+	    method: 'POST',
+	    headers: { 'content-type': 'application/json'},
+	    body: { userid : id_token},
+	    //mode: 'no-cors',
+	})
+	.then(blob => blob.json())
+	.then(data => {
+	    //console.log(data)
+	    var patient = data.is_patient;
+	    //var doctor = data.is_doctor;
+	})
+	.catch(e => {
+	    console.log(e);
+	    return e;
+	});
+
+	if (patient == true)
+	{
+	    window.open(patientdashboard.html);
+	}
+	else{
+	    window.open(doctordashboard.html);
+	}
+    })
+    </script>
+    <script>
+        function openNav() {
+			document.getElementById("mySidenav").style.width = "150px";
+			document.getElementById("main").style.marginLeft = "150px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+    </script>
+</body>
+
+</html>
