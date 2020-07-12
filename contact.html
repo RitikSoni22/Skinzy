@@ -5,8 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>medical</title>
-  <link rel="icon" href="img/favicon.png">
+  <title>Skinzy®</title>
+  <link rel="icon" href="img/skinzy-blue.png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- animate CSS -->
@@ -27,68 +27,67 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--::header part start::-->
-<header class="main_menu home_menu other_menu">
-  <div class="row align-items-center">
-      <div class="col-lg-12">
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="index.html"> <img src="img/skinzy-blue.png" alt="logo" height="75"> </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse"
-                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse main-menu-item" Style="margin-left: 770px; margin-right: 0px" id="navbarSupportedContent">
-                  <ul class="navbar-nav align-items-center">
-                      <li class="nav-item">
-                          <b><a class="nav-link" href="index.html">Home</a></b>
-                      </li>
-                      <li class="nav-item">
-                          <b><a class="nav-link" href="about.html">About Us</a></b>
-                      </li>
-                      <li class="nav-item">
-                          <b><a class="nav-link" href="contact.html">Contact Us</a></b>
-                      </li>
-                      <li class="nav-item">
-                        <div class="g-signin2" style="width:125px; height:50px" data-onsuccess="onSignIn"></div>
-                      </li>
-                      <script src="https://apis.google.com/js/platform.js" async defer></script>
-                      <script>
-                          function onSignIn(googleUser) {
-                              console.log('User is ' + JSON.stringify(googleUser.getBasicProfile()))
-                              document.querySelector('#content').innerText = googleUSer.getBasicProfile().getName();
-                          }  
-                      </script>
-                  </ul>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-12">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"> <img src="img/skinzy-blue.png" alt="logo"> </a>
+          <h4>Skinzy</h4>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse"
+                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                          id="navbarSupportedContent">
+                          <ul class="navbar-nav align-items-center">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="index.html">Home</a>
+                              </li>
+              <li class="nav-item">
+                                  <a class="nav-link" href="about.html">about us</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">contact us</a>
+                              </li>
+
+                          <!--    <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Pages
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="services.html">services</a>
+                                      <a class="dropdown-item" href="dep.html">depertments</a>
+                                      <a class="dropdown-item" href="elements.html">Elements</a>
+                                  </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
+                                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      blog
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                                      <a class="dropdown-item" href="blog.html">blog</a>
+                                      <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                  </div>
+                              </li>
+
+                              <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <a class="btn_2 d-none d-lg-block" href="#">HOT LINE- 09856</a>-->
+                  </nav>
               </div>
-              <!--<div id="id01" class="modal">
-                  <form class="modal-content animate" action=" " method="post">
-                      <div class="imgcontainer">
-                          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                      </div>
-                      <div class="container">
-                          <label for="uname"><b>Username</b></label>
-                          <input type="text" placeholder="Enter Username" name="uname" required>
-      
-                          <label for="psw"><b>Password</b></label>
-                          <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                          <button type="submit" onclick="doctordashboard.html">Login</button>
-                          <label>
-                              <input type="checkbox" checked="checked" name="remember"> Remember me
-                          </label>
-                      </div>
-                      <div class="container" style="background-color:#f1f1f1">
-                          <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>  
-                      </div>
-                  </form>
-              </div>-->
-          </nav>
+          </div>
       </div>
-  </div>
-</header>
-<!-- Header part end-->
+  </header>
+  <!-- Header part end-->
 
   <!-- breadcrumb start-->
   <section class="breadcrumb_part breadcrumb_bg">
@@ -180,7 +179,7 @@
         <div class="col-12">
           <center><h2 class="contact-title">Get in Touch</h2>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-00"></div>
+        <div class="col-lg-2 col-md-2 col-sm-0"></div>
         <div class="col-lg-8" style="margin-left:0px">
           <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
             novalidate="novalidate">
@@ -225,28 +224,27 @@
     <footer class="footer-area">
       <div class="single-footer-widget">
           <div class="container">
-    <center>
-      <a href="#" class="footer_logo"><img src="img/skinzy-blue.png" style="height:200px; width:250px" alt="#"></a><br><br>
-      <p>
-        Copyright&copy;
-        <script>    document.write(new Date().getFullYear());   </script>
-        All rights reserved | Thank you for visiting our website
-      </p>
-      <div class="row col-md-4" style="margin-left:4px">
-          <a href="#" target="_blank"> <img src="img/googleplay.png" alt="Play Store" style="height:71px; width:170px; padding-bottom:2px"></a>
-          <a href="#" target="_blank"> <img src="img/appstore.png" alt="App Store" style="height:47px; width:170px; margin-top:10px"></a>
-      </div>
-      <br> <br>
-      <div class=" col-md-3 social_logo">
-        <a href="#"> <img src="img/icon/facebook.png" style="width:25px"> </a>
-        <a href="#"> <img src="img/icon/instagram.png" style="width:25px"> </a>
-        <a href="#"> <img src="img/icon/twitter.png" style="width:25px"> </a>
-        <a href="#"> <img src="img/icon/skype.png" style="width:25px"> </a>
-      </div>
-    </center>
-    </div>
-      </div>
-  </footer>
+            <center>
+              <a href="#" class="footer_logo"><img src="img/skinzy-blue.png" style="height:100px; width:125px" alt="#"></a><br><br>
+              <p>
+                Copyright&copy;
+                <script>    document.write(new Date().getFullYear());   </script>
+                All rights reserved | Thank you for visiting our website
+              </p>
+              <div class="row col-md-4" style="margin-left:4px">
+                <a href="#" target="_blank"> <img src="img/googleplay.png" alt="Play Store" style="height:71px; width:170px; padding-bottom:2px"></a>
+                <a href="#" target="_blank"> <img src="img/appstore.png" alt="App Store" style="height:47px; width:170px; margin-top:10px"></a>
+              </div>
+              <div class=" col-md-3 social_logo">
+                <a href="#"> <img src="img/icon/facebook.png" style="width:25px"> </a>
+                <a href="#"> <img src="img/icon/instagram.png" style="width:25px"> </a>
+                <a href="#"> <img src="img/icon/twitter.png" style="width:25px"> </a>
+                <a href="#"> <img src="img/icon/skype.png" style="width:25px"> </a>
+              </div>
+            </center>
+          </div>
+        </div>
+    </footer>
   <!-- footer part end-->
 
   <!-- jquery plugins here-->
