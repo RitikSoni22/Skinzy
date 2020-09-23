@@ -2004,6 +2004,7 @@ ul {
   top: 0;
   width: 100%;
   z-index: 999;
+  height: 100px;
 }
 
 /* line 11, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
